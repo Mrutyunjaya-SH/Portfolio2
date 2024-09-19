@@ -1,0 +1,188 @@
+{ 
+    "skillsList":{
+        "sap.card": {
+            "type": "List",
+            "header": {
+                "title": "Core Skills",
+                "subTitle": "Working on...",
+                "icon": {
+                    "src": "sap-icon://education"
+                },
+                "status": {
+                    "text": ""
+                }
+            },
+            "content": {
+                "data": {
+                    "request": {
+                        "url": "./cardcontent/sometimes.json"
+                    }
+                },
+                "item": {
+                    "icon": {
+                        "src": "{icon}",
+                        "visible": true
+                    },
+                    "title": "{Name}",
+                    "description": "{Description}",
+                    "highlight": "{state}",
+                    "info": {
+                        "value": "{info}",
+                        "state": "{infoState}"
+                    },
+                    "group": {
+                        "title": "{= ${infoState} === 'Success' ? 'Successful' : 'Unsuccessful'}",
+                        "order": {
+                            "path": "infoState",
+                            "dir": "ASC"
+                        }
+                    }
+                }
+            }
+        }      
+    },
+    "endorseList":{
+        "sap.card": {
+            "type": "List",
+            "header": {
+                "title": "Endorsing",
+                "subTitle": "Learning ...",
+                "icon": {
+                    "src": "sap-icon://target-group"
+                },
+                "status": {
+                    "text": ""
+                }
+            },
+            "content": {
+                "data": {
+                    "request": {
+                        "url": "./cardcontent/endorsements.json"
+                    }
+                },
+                "item": {
+                    "icon": {
+                        "src": "{icon}",
+                        "visible": true
+                    },
+                    "title": "{Name}",
+                    "description": "{Description}",
+                    "highlight": "{state}",
+                    "info": {
+                        "value": "{info}",
+                        "state": "{infoState}"
+                    }
+                }
+            }
+        }      
+    },
+
+"workExp": {
+    "sap.app": {
+        "id": "por.portfolio.model.mockdata.images",
+        "type": "card"
+    },
+    "sap.card": {
+        "type": "Timeline",
+        "header": {
+            "title": "Work Experience",
+            "subTitle": "",
+            "status": {
+                "text": ""
+            },
+            "icon": {
+                "src": "sap-icon://work-history"
+            },
+            "enableDoubleSided":true
+        },
+        "content": {
+            "data": {
+                "request": {
+                    "url": "./cardcontent/workExp.json"
+                }
+            },
+            "item": {
+                "dateTime": {
+					"value": "{Time}"
+				},
+				"description": {
+					"value": "{Description}"
+				},
+				"title": {
+					"value": "{Designation}"
+				},
+				"owner": {
+					"value": "{Title}",
+                    "actions": [
+                        {
+                            "type": "Navigation",
+                            "parameters": {
+                                "url": "www.infosys.com"
+                            }
+                        }
+                    ]
+				},
+				"ownerImage": {
+					"value": "sap-icon://business-card"
+				},
+				"icon": {
+					"src": "{Icon}"
+				}
+            }
+        }
+    }
+},
+"education": {
+    "sap.app": {
+        "id": "por.portfolio.model.mockdata.images",
+        "type": "card"
+    },
+    "sap.card": {
+        "type": "Timeline",
+        "header": {
+            "title": "Education",
+            "subTitle": "",
+            "status": {
+                "text": ""
+            },
+            "icon": {
+                "src": "sap-icon://study-leave"
+            },
+            "actions": [
+                {
+                    "type": "Navigation",
+                    "parameters": {
+                        "url": "/quickLinks"
+                    }
+                }
+            ],
+            "enableDoubleSided":true
+        },
+        "content": {
+            "data": {
+                "request": {
+                    "url": "./cardcontent/education.json"
+                }
+            },
+            "item": {
+                "dateTime": {
+					"value": "{Time}"
+				},
+				"description": {
+					"value": "{Description}"
+				},
+				"title": {
+					"value": "{Designation}"
+				},
+				"owner": {
+					"value": "{Title}"
+				},
+
+				"icon": {
+					"src": "sap-icon://education"
+				}
+            }
+        }
+    }
+}
+}

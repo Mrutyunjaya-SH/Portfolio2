@@ -1,0 +1,72 @@
+<core:FragmentDefinition id="splitContainerDialogFrag"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+	xmlns:co="sap.suite.ui.commons"
+	xmlns:ui-integration="sap.ui.integration.widgets">
+<l:ResponsiveSplitter defaultPane="default">
+		<l:PaneContainer resize=".onRootContainerResize">
+			<l:SplitPane requiredParentWidth="400" id="default" >
+				<l:layoutData>
+					<l:SplitterLayoutData size="30%" minSize="200px"/>
+				</l:layoutData>
+				<Page id="subPage1" class="image1" showHeader="false">
+					<content id="content1" >
+						<Avatar id="avAst" tooltip="Theme" src="images/astronut.png" displaySize="XL" showBorder="false" class="avatars" press="onAstronut"/>
+						<Avatar id="avLinkedIn" tooltip="Linked In" src="images/linkedin.svg" displaySize="XS" class="avatars" press="onLinkedIn"/>
+						<Avatar id="avGitHub" tooltip="Github" src="images/github.svg" displaySize="XS" class="avatars" press="onGit"/>
+						<Avatar id="avInstagram" tooltip="Instagram" src="images/instagram.png" displaySize="XS" class="avatars" press="onInsta"/>
+						<Avatar id="avEmail" tooltip="Mail" src="images/mail.png" displaySize="XS" class="avatars" press="onMail"/>
+					</content>
+				</Page>
+				
+			</l:SplitPane>
+			<l:PaneContainer orientation="Vertical" resize=".onInnerContainerResize" class="container">
+				<l:SplitPane requiredParentWidth="800">
+					<l:layoutData>
+						<l:SplitterLayoutData  minSize="200px" />
+					</l:layoutData>
+					<Page id="subPage2" showHeader="false" showNavButton="true" enableScrolling="true" class="image" height="100%">
+						<!-- <Button class="button" text="Hire Me!" type="Transparent"/> -->
+						<!-- <Button class="button1" text="Say Hi!" type="Transparent"/> -->
+						
+						<Text class="NameText slideleft" textAlign="Initial" text="{about>/name}"/>
+						<Text class="DescText slideleft" textAlign="Initial" text="{about>/about}" />
+						<Text id="IndExp1" class="IndExp slideleft" textAlign="Initial" text="{about>/desc}" />
+						
+						<IconTabBar class="contactform" backgroundDesign="Transparent" headerBackgroundDesign="Transparent">
+							<items>
+							<IconTabFilter text="Skills">
+								<HBox  justifyContent="SpaceAround">
+								<!-- Use this if trying to access the file created in the path of manifest with different name for the json file as given below : File is kept as we can test it to understand it -->
+								<!-- <ui-integration:Card manifest="./cardsManifest.json" width="300px" height="auto"/> -->       
+
+								<!-- To consume the below cards, we have created a model in controller file and trying to access the model data -->
+								<ui-integration:Card manifest="{cards>/skillsList}" width="300px" height="auto"/>
+								<ui-integration:Card manifest="{cards>/endorseList}" width="300px" height="auto"/>
+
+								<!-- <ui-integration:Card manifest="/model/mockdata/cardsManifest.json" width="300px" height="auto"/> -->
+
+							</HBox>
+						</IconTabFilter>
+
+						<IconTabFilter text="Work">
+								<ui-integration:Card manifest="{cards>/workExp}" width="auto" height="auto" design="Transparent"/>
+						</IconTabFilter>
+
+						<IconTabFilter text="Education">
+							<ui-integration:Card manifest="{cards>/education}" width="auto" height="auto" design="Transparent"/>
+						</IconTabFilter>
+
+						</items>
+					</IconTabBar>
+					<VBox>
+						<Text class="footerText" text="Made with ❤️️ in India"/>
+						<Text class="footerText" text="No © Copyright issues. Feel free to copy. If you need any help, ping me!"/>
+					</VBox>
+					</Page>
+				</l:SplitPane>
+			</l:PaneContainer>
+		</l:PaneContainer>
+	</l:ResponsiveSplitter>
+</core:FragmentDefinition>

@@ -1,0 +1,32 @@
+{
+    "images":[
+        {
+            "link": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/60408b86366469.5d970b67c1f5a.jpg",
+            "name": "Astronaut"
+        },
+        {
+            "link": "./images/instagram",
+            "name" : "Instagram"
+        },
+        {
+            "link": "./images/linkedin",
+            "name":"LinkedIn"        
+        },
+        {
+            "link": "./images/mail",
+            "name":"Mail"
+        },
+        {
+            "link": "./images/144",
+            "name": "FavIcon"
+        },
+        {
+            "link": "./images/foot",
+            "name":"Foot"
+        },
+        {
+            "link": "./images/foots",
+            "name":"Foots"
+        }
+    ]
+}

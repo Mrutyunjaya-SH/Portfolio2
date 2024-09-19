@@ -1,0 +1,55 @@
+<!-- <mvc:View controllerName="por.portfolio.controller.ZMain"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
+    >
+    <!-- <Page id="page1"> -->
+        <!-- <content> -->
+            <l:ResponsiveSplitter height="100%">
+                    <!-- <l:AssociativeSplitteer id="splitter1">
+                        <Page id="page0">
+                            <Panel id="panel0">
+                                <f:Avatar id="avatar0"></f:Avatar>              
+                                    <Icon id="icon0" src="/images/astronut"></Icon>
+                                <f:Avatar id="avatar1"></f:Avatar>              
+                                    <Icon id="icon1"></Icon>
+                                <f:Avatar id="avatar2"></f:Avatar>              
+                                    <Icon id="icon2"></Icon>
+                                <f:Avatar id="avatar3"></f:Avatar>              
+                                    <Icon id="icon3"></Icon>
+                                <f:Avatar id="avatar4"></f:Avatar>              
+                                    <Icon id="icon4"></Icon>
+                            </Panel>
+                        </Page>   
+                    </l:AssociativeSplitteer> -->
+                    <l:PaneContainer>
+                        <l:SplitPane requiredParentWidth="400" id="default">
+                            <Image id="image"
+									src="{imgages>/ast}"
+									backgroundSize="5em 5em"
+									backgroundPosition="center"
+									 >
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+							</Image>
+                            <Button id="btn" text="button" press="onBtn"/>    
+                            <Label text="Hello"></Label>
+                            <Input id="inId" width="30%" value="{/images/name}"></Input>
+			            </l:SplitPane>
+                    
+                        <l:SplitPane requiredParentWidth="400" id="default2">
+				            <Panel>
+					            <Text text="LayoutData.size={sizes>/pane1}" />
+					            <List headerText="Products" items="{ path: '/ProductCollection' }">
+						            <StandardListItem title="{Name}" counter="{Quantity}" />
+					            </List>
+				            </Panel>
+			            </l:SplitPane>
+                    </l:PaneContainer>
+            </l:ResponsiveSplitter>
+        <!-- </content > -->
+    <!-- </Page> -->
+</mvc:View> -->

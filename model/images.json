@@ -1,0 +1,12 @@
+{
+    "Designations":[
+        {
+            "company":"Infosys",
+            "des": "SAP UI5 Developer",
+            "date":"2021-present",
+            "JobResponsibilities":"Developing responsive user interface for both mobile and desktop platforms. Implementing CRUD operations using OData service in SAPUI5. Fetching the backend data using SAP Gateway URL. Runtime Browser debugging for fiori apps.",
+            "icon":"sap-icon://syntax"
+        }
+       
+    ]
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "Title": "Infosys",
+        "Designation": "Senior Systems Engineer",
+        "Description": "Developing responsive user interface for both mobile and desktop platforms. \n Implementing CRUD operations using OData service in SAPUI5. \n Fetching the backend data using SAP Gateway URL. \n Runtime Browser debugging for fiori apps.",
+        "Icon": "sap-icon://in-progress",
+        "Time":  "2021 - Present"
+    }
+]

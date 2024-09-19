@@ -1,0 +1,10 @@
+<core:FragmentDefinition id="splitContainerDialogFrag"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+	xmlns:co="sap.suite.ui.commons"
+	xmlns:ui-integration="sap.ui.integration.widgets">
+
+    
+    <Avatar id="avAst2" tooltip="Theme" src="images/astronut.png" displaySize="XL" showBorder="false" class="avatars" press="onAstronut"/>
+    </core:FragmentDefinition>

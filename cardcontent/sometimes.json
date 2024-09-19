@@ -1,0 +1,24 @@
+[
+    {
+	"Name": "SAP FIORI",
+	"icon": "../images/phenix_blue.svg",
+    "value": 80
+},
+{
+	"Name": "Javascript",
+	"icon": "../images/js.png",
+    "value": 75
+
+},
+{
+    "Name": "HTML5",
+    "icon": "../images/html5.svg",
+    "value": "85"
+},
+{
+	"Name": "CSS3",
+	"icon": "../images/css3.svg",
+    "value": 70
+}
+
+]
