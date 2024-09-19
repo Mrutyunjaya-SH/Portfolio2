@@ -1,6 +1,7 @@
 { 
     "skillsList":{
         "sap.card": {
+            "id":"skillsCard",
             "type": "List",
             "header": {
                 "title": "Core Skills",
@@ -15,7 +16,7 @@
             "content": {
                 "data": {
                     "request": {
-                        "url": "./cardcontent/sometimes.json"
+                        "url": "/Portfolio2/cardcontent/sometimes.json"
                     }
                 },
                 "item": {
@@ -43,6 +44,7 @@
     },
     "endorseList":{
         "sap.card": {
+            "id":"endorseCard",
             "type": "List",
             "header": {
                 "title": "Endorsing",
@@ -57,7 +59,7 @@
             "content": {
                 "data": {
                     "request": {
-                        "url": "./cardcontent/endorsements.json"
+                        "url": "/Portfolio2/cardcontent/endorsements.json"
                     }
                 },
                 "item": {
@@ -83,6 +85,7 @@
         "type": "card"
     },
     "sap.card": {
+        "id":"expCard",
         "type": "Timeline",
         "header": {
             "title": "Work Experience",
@@ -98,7 +101,7 @@
         "content": {
             "data": {
                 "request": {
-                    "url": "./cardcontent/workExp.json"
+                    "url": "/Portfolio2/cardcontent/workExp.json"
                 }
             },
             "item": {
@@ -138,6 +141,7 @@
         "type": "card"
     },
     "sap.card": {
+        "id":"educationCard",
         "type": "Timeline",
         "header": {
             "title": "Education",
@@ -161,7 +165,7 @@
         "content": {
             "data": {
                 "request": {
-                    "url": "./cardcontent/education.json"
+                    "url": "/Portfolio2/cardcontent/education.json"
                 }
             },
             "item": {

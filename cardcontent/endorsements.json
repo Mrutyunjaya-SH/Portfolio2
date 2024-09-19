@@ -1,16 +1,16 @@
 [
     {
 	"Name": "SAP CAPM",
-	"icon": "../images/phenix_blue.svg"
+	"icon": "/Portfolio2/images/phenix_blue.svg"
 },
 {
 	"Name": "Node JS",
-	"icon": "../images/node.svg"
+	"icon": "/Portfolio2/images/node.svg"
 
 },
 {
     "Name": "Advanced CSS",
-	"icon": "../images/css3.svg"
+	"icon": "/Portfolio2/images/css3.svg"
 }
 
 ]
